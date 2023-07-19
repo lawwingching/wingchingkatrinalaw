@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/menu.js">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="css/animsition.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script>
+    $(function(){
+    $(window).scroll(function (){
+    $('.fadein').each(function(){
+    var targetElement = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > targetElement - windowHeight + 200){
+    $(this).css('opacity','1');
+    $(this).css('transform','translateY(0)');
+    }
+    });
+    });
+    });
+    </script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/animsition.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+<script>
+    $(function() {
+    var topBtn = $('#page-top');
+    topBtn.hide();
+    //スクロールが100pxに達したらボタン表示
+    $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+    topBtn.fadeIn();
+    } else {
+    topBtn.fadeOut();
+    }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+    $('body,html').animate({
+    scrollTop: 0
+    }, 500);
+    return false;
+    });
+    });
+    </script>
+
+
+    <!--loading start-->
+    <script>
+        $(function(){
+    //読み込みが完了したら実行する
+    $(window).on('load',function(){
+      //ローディングアニメーションをフェードアウト
+      $('.loader').delay(500).fadeOut(500);
+      //背景色をフェードアウト
+      $('.loader-bg').delay(500).fadeOut(500);
+  });
+  
+    //ページの読み込みが完了してなくても5秒後にアニメーションを非表示にする
+    setTimeout(function(){
+      $('.loader-bg').fadeOut(600);
+    },5000);
+  });
+
+  setTimeout(function(){
+    $('.loader-bg').fadeOut(600);
+  },5000); //5秒後にfadeOut処理
+      </script>
+<!--loading end-->
+
+
+
+
+
+<script>
+    $(function(){
+    $(".pd01-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+
+<script>
+    $(function(){
+    $(".pd02-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+
+<script>
+    $(function(){
+    $(".pd03-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+
+<script>
+    $(function(){
+    $(".pd04-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+
+<script>
+    $(function(){
+    $(".pd05-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+    
+    <title> LAW's portfolio | PRODUCT </title>
+    
+
+    <div class="loader-bg">
+        <div class="loader"></div>
+      </div>
+
+    <div class="wrapper">
+
+        <body class="animsition">
+
+            <body bgcolor="#000"></body>
+        
+            <div class="logo">  
+            <a href="index.html"><img src="images/logo/logo_wh.png" width="200px" alt="Katrina Law's Portfolio Site"></a>
+            </div>
+
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li><a href="profile.html" class="link">PROFILE</a></li>
+                        <li class="works-title">WORKS</li>
+                        <li><a href="advertisement.html" class="sublink">Advertisement</a></li>
+                        <li><a href="packaging.html" class="sublink">Packaging</a></li>
+                        <li><a href="product.html" class="sublink">Product</a></li>
+                        <li><a href="character.html" class="sublink">Character</a></li>
+                        <li><a href="web.html" class="sublink">Web</a></li>
+                        <li><a href="layout.html" class="sublink">Layout</a></li>
+                        <li><a href="contact.html" class="link">CONTACT</a></li>
+                </ul>
+                </div>
+            </div>
+
+ 
+    <div class="work-cattit">
+        <h1 class="worksbox">WORKS</h1>
+        <h1 class="workname">Product</h1>
+    </div>
+
+    <div class="img-container">
+
+        <div class="pd01">
+            <a data-fancybox="pd01" href="images/details/pd01-03.jpg" alt="details">
+            <a data-fancybox="pd01" href="images/details/pd01-02.jpg" alt="details">
+            <a data-fancybox="pd01" href="images/details/pd01-01.jpg" alt="details">
+            <img class="pd01-c" src="images/thumbnails/color/pd01_brooch.jpg">
+            <img class="pd01-bw" src="images/thumbnails/mono/pd01_brooch_mono.jpg">
+            </a>
+
+            <p class="caption1">HONG KONG - CHARACTER BROOCH</p>
+            
+        </div>
+
+
+        <div class="pd02">
+            <a data-fancybox="pd02" href="images/details/pd02-02.jpg" alt="details">
+            <a data-fancybox="pd02" href="images/details/pd02-01.jpg" alt="details">
+            <img class="pd02-c" src="images/thumbnails/color/pd02_calendar.jpg">
+            <img class="pd02-bw" src="images/thumbnails/mono/pd02_calendar_mono.jpg"></a>
+            <p class="caption1">HONG KONG - CALENDAR</p>
+        </div>
+
+        <div class="pd03">
+                <a data-fancybox="pd03" href="images/details/pd03-03.jpg" alt="details">
+                <a data-fancybox="pd03" href="images/details/pd03-02.jpg" alt="details">
+                <a data-fancybox="pd03" href="images/details/pd03-01.jpg" alt="details">
+            <img class="pd03-c" src="images/thumbnails/color/pd03_redpocket.jpg">
+            <img class="pd03-bw" src="images/thumbnails/mono/pd03_redpocket_mono.jpg"></a>
+            <p class="caption1">HONG KONG - RED ENVELOP</p>
+        </div>
+
+        <div class="pd04">
+                <a data-fancybox="pd04"  href="images/details/pd04-02.jpg" alt="details">
+                <a data-fancybox="pd04"  href="images/details/pd04-01.jpg" alt="details">
+            <img class="pd04-c" src="images/thumbnails/color/pd04_tradingcard.jpg">
+            <img class="pd04-bw" src="images/thumbnails/mono/pd04_tradingcard_mono.jpg"></a>
+            <p class="caption1">HONG KONG - TRADING CARD</p>
+        </div>
+
+        <div class="pd05">
+            <a data-fancybox="pd05" href="images/details/pd05-03.jpg" alt="details">
+            <a data-fancybox="pd05" href="images/details/pd05-02.jpg" alt="details">
+            <a data-fancybox="pd05" href="images/details/pd05-01.jpg" alt="details">
+                <img class="pd05-c" src="images/thumbnails/color/pd05_stampbook.jpg">
+            <img class="pd05-bw" src="images/thumbnails/mono/pd05_stampbook_mono.jpg"></a>
+            <p class="caption2">HONG KONG - STAMP BOOK</p>
+        </div>
+
+
+
+
+</div>
+        <footer>
+            <span><div class="footer_white"></span>
+                <p> Copyright &copy; 2023 Katrina Wingching Law All Rights Reserved.</p>
+        </footer>
+        </div>
+
+
+

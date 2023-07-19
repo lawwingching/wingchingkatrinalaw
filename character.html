@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/menu.js">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/animsition.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script>
+    $(function(){
+    $(window).scroll(function (){
+    $('.fadein').each(function(){
+    var targetElement = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > targetElement - windowHeight + 200){
+    $(this).css('opacity','1');
+    $(this).css('transform','translateY(0)');
+    }
+    });
+    });
+    });
+    </script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/animsition.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+<script>
+    $(function() {
+    var topBtn = $('#page-top');
+    topBtn.hide();
+    //スクロールが100pxに達したらボタン表示
+    $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+    topBtn.fadeIn();
+    } else {
+    topBtn.fadeOut();
+    }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+    $('body,html').animate({
+    scrollTop: 0
+    }, 500);
+    return false;
+    });
+    });
+    </script>
+
+
+    <!--loading start-->
+    <script>
+        $(function(){
+    //読み込みが完了したら実行する
+    $(window).on('load',function(){
+      //ローディングアニメーションをフェードアウト
+      $('.loader').delay(500).fadeOut(500);
+      //背景色をフェードアウト
+      $('.loader-bg').delay(500).fadeOut(500);
+  });
+  
+    //ページの読み込みが完了してなくても5秒後にアニメーションを非表示にする
+    setTimeout(function(){
+      $('.loader-bg').fadeOut(600);
+    },5000);
+  });
+
+  setTimeout(function(){
+    $('.loader-bg').fadeOut(600);
+  },5000); //5秒後にfadeOut処理
+      </script>
+<!--loading end-->
+
+
+
+
+
+<script>
+    $(function(){
+    $(".c01-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+
+<script>
+    $(function(){
+    $(".c02-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+
+
+
+    <title> LAW's portfolio | CHARACTER DESIGN </title>
+    
+
+    <div class="loader-bg">
+        <div class="loader"></div>
+      </div>
+
+    <div class="wrapper">
+
+        <body class="animsition">
+
+            <body bgcolor="#000"></body>
+        
+            <div class="logo">  
+            <a href="index.html"><img src="images/logo/logo_wh.png" width="200px" alt="Katrina Law's Portfolio Site"></a>
+            </div>
+
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li><a href="profile.html" class="link">PROFILE</a></li>
+                        <li class="works-title">WORKS</li>
+                        <li><a href="advertisement.html" class="sublink">Advertisement</a></li>
+                        <li><a href="packaging.html" class="sublink">Packaging</a></li>
+                        <li><a href="product.html" class="sublink">Product</a></li>
+                        <li><a href="character.html" class="sublink">Character</a></li>
+                        <li><a href="web.html" class="sublink">Web</a></li>
+                        <li><a href="layout.html" class="sublink">Layout</a></li>
+                        <li><a href="contact.html" class="link">CONTACT</a></li>
+                </ul>
+                </div>
+            </div>
+
+ 
+    <div class="work-cattit">
+        <h1 class="worksbox">WORKS</h1>
+        <h1 class="workname">Character Design</h1>
+    </div>
+
+    <div class="img-container">
+
+        <div class="c01">
+            <a data-fancybox="c01" href="images/details/c01-02.jpg" alt="details">
+            <a data-fancybox="c01" href="images/details/c01-01.jpg" alt="details">
+            <img class="c01-c" src="images/thumbnails/color/c01_minione.jpg">
+            <img class="c01-bw" src="images/thumbnails/mono/c01_minione_mono.jpg">
+            </a>
+
+            <p class="caption1">ASSIGNMENT - MINIONE ORIGINAL CHARACTER</p>
+            
+        </div>
+
+
+        <div class="c02">
+            <a data-fancybox="c02" href="images/details/c02-04.jpg" alt="details">
+            <a data-fancybox="c02" href="images/details/c02-03.jpg" alt="details">
+            <a data-fancybox="c02" href="images/details/c02-02.jpg" alt="details">
+            <a data-fancybox="c02" href="images/details/c02-01.jpg" alt="details">
+            <img class="c02-c" src="images/thumbnails/color/c02_ak.jpg">
+            <img class="c02-bw" src="images/thumbnails/mono/c02_ak_mono.jpg"></a>
+            <p class="caption2">HONG KONG - ORIGINAL CHARACTER</p>
+        </div>
+
+
+
+
+</div>
+        <footer>
+            <span><div class="footer_white"></span>
+                <p> Copyright &copy; 2023 Katrina Wingching Law All Rights Reserved.</p>
+        </footer>
+        </div>
+
+
+

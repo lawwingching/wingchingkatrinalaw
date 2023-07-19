@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/menu.js">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/animsition.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script>
+    $(function(){
+    $(window).scroll(function (){
+    $('.fadein').each(function(){
+    var targetElement = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > targetElement - windowHeight + 200){
+    $(this).css('opacity','1');
+    $(this).css('transform','translateY(0)');
+    }
+    });
+    });
+    });
+    </script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/animsition.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+<script>
+    $(function() {
+    var topBtn = $('#page-top');
+    topBtn.hide();
+    //スクロールが100pxに達したらボタン表示
+    $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+    topBtn.fadeIn();
+    } else {
+    topBtn.fadeOut();
+    }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+    $('body,html').animate({
+    scrollTop: 0
+    }, 500);
+    return false;
+    });
+    });
+    </script>
+
+
+    <!--loading start-->
+    <script>
+        $(function(){
+    //読み込みが完了したら実行する
+    $(window).on('load',function(){
+      //ローディングアニメーションをフェードアウト
+      $('.loader').delay(500).fadeOut(500);
+      //背景色をフェードアウト
+      $('.loader-bg').delay(500).fadeOut(500);
+  });
+  
+    //ページの読み込みが完了してなくても5秒後にアニメーションを非表示にする
+    setTimeout(function(){
+      $('.loader-bg').fadeOut(600);
+    },5000);
+  });
+
+  setTimeout(function(){
+    $('.loader-bg').fadeOut(600);
+  },5000); //5秒後にfadeOut処理
+      </script>
+<!--loading end-->
+
+
+
+
+
+<script>
+    $(function(){
+    $(".ad01-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+
+<script>
+    $(function(){
+    $(".ad02-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+
+<script>
+    $(function(){
+    $(".ad03-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+
+<script>
+    $(function(){
+    $(".ad04-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+
+<script>
+    $(function(){
+    $(".ad05-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+<script>
+    $(function(){
+    $(".ad06-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+<script>
+    $(function(){
+    $(".ad07-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+<script>
+    $(function(){
+    $(".ad08-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+<script>
+    $(function(){
+    $(".ad09-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+<script>
+    $(function(){
+    $(".ad10-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+
+    
+    <title> LAW's portfolio | ADVERTISEMENT </title>
+    
+
+    <div class="loader-bg">
+        <div class="loader"></div>
+      </div>
+
+    <div class="wrapper">
+
+        <body class="animsition">
+
+            <body bgcolor="#000"></body>
+        
+            <div class="logo">  
+            <a href="index.html"><img src="images/logo/logo_wh.png" width="200px" alt="Katrina Law's Portfolio Site"></a>
+            </div>
+
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li><a href="profile.html" class="link">PROFILE</a></li>
+                        <li class="works-title">WORKS</li>
+                        <li><a href="advertisement.html" class="sublink">Advertisement</a></li>
+                        <li><a href="packaging.html" class="sublink">Packaging</a></li>
+                        <li><a href="product.html" class="sublink">Product</a></li>
+                        <li><a href="character.html" class="sublink">Character</a></li>
+                        <li><a href="web.html" class="sublink">Web</a></li>
+                        <li><a href="layout.html" class="sublink">Layout</a></li>
+                        <li><a href="contact.html" class="link">CONTACT</a></li>
+                </ul>
+                </div>
+            </div>
+
+ 
+    <div class="work-cattit">
+        <h1 class="worksbox">WORKS</h1>
+        <h1 class="workname">Advertisement</h1>
+    </div>
+
+    <div class="img-container">
+
+        <div class="ad01">
+            <a data-fancybox="ad01" href="images/details/a02-06.jpg" alt="details">
+            <a data-fancybox="ad01" href="images/details/a02-05.jpg" alt="details">
+            <a data-fancybox="ad01" href="images/details/a02-04.jpg" alt="details">
+            <a data-fancybox="ad01" href="images/details/a02-03.jpg" alt="details">
+            <a data-fancybox="ad01" href="images/details/a02-02.jpg" alt="details">
+            <a data-fancybox="ad01" href="images/details/a02-01.jpg" alt="details">
+            <img class="ad01-c" src="images/thumbnails/color/a02_van.jpg">
+            <img class="ad01-bw" src="images/thumbnails/mono/a02_van_mono.jpg">
+            </a>
+
+            <p class="caption1">HONG KONG - ADVERTISING VAN</p>
+            
+        </div>
+
+
+        <div class="ad09">
+            <a data-fancybox="ad09" href="images/details/a09-04.jpg" alt="details">
+            <a data-fancybox="ad09" href="images/details/a09-03.jpg" alt="details">
+            <a data-fancybox="ad09" href="images/details/a09-02.jpg" alt="details">
+            <a data-fancybox="ad09" href="images/details/a09-01.jpg" alt="details">
+            <img class="ad09-c" src="images/thumbnails/color/a09_tram.jpg">
+            <img class="ad09-bw" src="images/thumbnails/mono/a09_tram_mono.jpg"></a>
+            <p class="caption1">HONG KONG - TRAM ADVERTISEMENT</p>
+        </div>
+
+        <div class="ad02">
+                <a data-fancybox="ad02" href="images/details/a01-04.jpg" alt="details">
+                <a data-fancybox="ad02" href="images/details/a01-03.jpg" alt="details">
+                <a data-fancybox="ad02" href="images/details/a01-02.jpg" alt="details">
+                <a data-fancybox="ad02" href="images/details/a01-01.jpg" alt="details">
+            <img class="ad02-c" src="images/thumbnails/color/a01_bus.jpg">
+            <img class="ad02-bw" src="images/thumbnails/mono/a01_bus_mono.jpg"></a>
+            <p class="caption1">HONG KONG - ADVERTISING BUS</p>
+        </div>
+
+        <div class="ad03">
+                <a data-fancybox="ad03"  href="images/details/a03-04.jpg" alt="details">
+                <a data-fancybox="ad03"  href="images/details/a03-03.jpg" alt="details">
+                <a data-fancybox="ad03"  href="images/details/a03-02.jpg" alt="details">
+                <a data-fancybox="ad03"  href="images/details/a03-01.jpg" alt="details">
+
+            <img class="ad03-c" src="images/thumbnails/color/a03_backdrop.jpg">
+            <img class="ad03-bw" src="images/thumbnails/mono/a03_backdrop_mono.jpg"></a>
+            <p class="caption1">HONG KONG - EVENT BACKDROP</p>
+        </div>
+
+
+        <div class="ad10">
+            <a data-fancybox="ad08" href="images/details/a10-05.jpg" alt="details">
+            <a data-fancybox="ad08" href="images/details/a10-04.jpg" alt="details">
+            <a data-fancybox="ad08" href="images/details/a10-03.jpg" alt="details">
+            <a data-fancybox="ad08" href="images/details/a10-02.jpg" alt="details">
+            <a data-fancybox="ad08" href="images/details/a10-01.jpg" alt="details">
+            <img class="ad08-c" src="images/thumbnails/color/a10_newoman.jpg">
+            <img class="ad08-bw" src="images/thumbnails/mono/a10_newoman_mono.jpg"></a>
+            <p class="caption1">ASSIGNMENT - SEASONAL ADVERTISEMENT</p>
+        </div>
+
+
+
+        <div class="ad04">
+            <a data-fancybox="ad04" href="images/details/a04-04.jpg" alt="details">
+            <a data-fancybox="ad04" href="images/details/a04-03.jpg" alt="details">
+            <a data-fancybox="ad04" href="images/details/a04-02.jpg" alt="details">
+            <a data-fancybox="ad04" href="images/details/a04-01.jpg" alt="details">
+                <img class="ad04-c" src="images/thumbnails/color/a04_byredo.jpg">
+            <img class="ad04-bw" src="images/thumbnails/mono/a04_byredo_mono.jpg"></a>
+            <p class="caption1">ASSIGNMENT - MAGAZINE ADVERTISEMENT</p>
+        </div>
+
+        <div class="ad05">
+            <a data-fancybox="ad05" href="images/details/a05-05.jpg" alt="details">
+            <a data-fancybox="ad05" href="images/details/a05-04.jpg" alt="details">
+            <a data-fancybox="ad05" href="images/details/a05-03.jpg" alt="details">
+            <a data-fancybox="ad05" href="images/details/a05-02.jpg" alt="details">
+            <a data-fancybox="ad05" href="images/details/a05-01.jpg" alt="details">
+            <img class="ad05-c" src="images/thumbnails/color/a05_haretomizu.jpg">
+            <img class="ad05-bw" src="images/thumbnails/mono/a05_haretomizu_mono.jpg"></a>
+            <p class="caption1">ASSIGNMENT - TRANSIT ADVERTISEMENT</p>
+        </div>
+
+        <div class="ad06">
+            <a data-fancybox="ad06" href="images/details/a06-03.jpg" alt="details">
+            <a data-fancybox="ad06" href="images/details/a06-02.jpg" alt="details">
+            <a data-fancybox="ad06" href="images/details/a06-01.jpg" alt="details">
+            <img class="ad06-c" src="images/thumbnails/color/a06_supercup.jpg">
+            <img class="ad06-bw" src="images/thumbnails/mono/a06_supercup_mono.jpg"></a>
+            <p class="caption1">ASSIGNMENT - NEWSPAPER ADVERTISEMENT</p>
+        </div>
+
+        <div class="ad07">
+            <a data-fancybox="ad07" href="images/details/a07-03.jpg" alt="details">
+            <a data-fancybox="ad07" href="images/details/a07-02.jpg" alt="details">
+            <a data-fancybox="ad07" href="images/details/a07-01.jpg" alt="details">
+            <img class="ad07-c" src="images/thumbnails/color/a07_CMIfixture.jpg">
+            <img class="ad07-bw" src="images/thumbnails/mono/a07_CMIfixture_mono.jpg"></a>
+            <p class="caption1">HONG KONG - SHOP FIXTURE</p>
+        </div>
+
+        <div class="ad08">
+            <a data-fancybox="ad08" href="images/details/a08.jpg" alt="details">
+            <img class="ad08-c" src="images/thumbnails/color/a08_flyer.jpg">
+            <img class="ad08-bw" src="images/thumbnails/mono/a08_flyer_mono.jpg"></a>
+            <p class="caption2">TAIWAN - FLYER</p>
+        </div>
+
+
+
+
+</div>
+        <footer>
+            <span><div class="footer_white"></span>
+                <p> Copyright &copy; 2023 Katrina Wingching Law All Rights Reserved.</p>
+        </footer>
+        </div>
+
+
+

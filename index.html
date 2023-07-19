@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/menu.js">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.bgswitcher.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <script>
+        jQuery(function($) {
+            $('.bg-slider').bgSwitcher({//HTMLで設定しているCLASS名に合わせる
+            images: ['images/bg/bg1.png','images/bg/bg2.png','images/bg/bg3.png','images/bg/bg4.png'], // 切り替える背景画像を指定
+            interval: 5000, // 背景画像を切り替える間隔を指定 3000=3秒
+            loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
+            shuffle: false, // 背景画像の順番をシャッフルするか指定 true=する　false=しない
+            effect: "fade", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+            duration: 4000, // エフェクトの時間を指定します。
+            easing: "linear" // エフェクトのイージングをlinear,swingから指定
+            });
+        });
+      </script> -->
+
+
+        <!--loading start-->
+        <script>
+            $(function(){
+        //読み込みが完了したら実行する
+        $(window).on('load',function(){
+          //ローディングアニメーションをフェードアウト
+          $('.loader').delay(500).fadeOut(500);
+          //背景色をフェードアウト
+          $('.loader-bg').delay(500).fadeOut(500);
+      });
+      
+        //ページの読み込みが完了してなくても5秒後にアニメーションを非表示にする
+        setTimeout(function(){
+          $('.loader-bg').fadeOut(600);
+        },1000);
+      });
+    
+      setTimeout(function(){
+        $('.loader-bg').fadeOut(600);
+      },1000); //5秒後にfadeOut処理
+          </script>
+    <!--loading end-->
+
+
+</head>
+
+<div class="loader-bg">
+    <div class="loader"></div>
+  </div>
+
+<body>
+
+    
+  <video autoplay muted loop id="video">
+    <source src="video/video-mono.mp4" type="video/mp4">
+  </video>
+
+
+  <div class="home-logo">  
+    <a href="#pagetop"><img src="images/logo/logo_wh.png" width="200px" alt="Katrina Law's Portfolio Site"></a>
+
+
+  
+    <title> LAW's portfolio | HOME </title>
+    </div>  
+
+
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                      <li><a href="profile.html" class="link">PROFILE</a></li>
+                      <li class="works-title">WORKS</li>
+                      <li><a href="advertisement.html" class="sublink">Advertisement</a></li>
+                      <li><a href="packaging.html" class="sublink">Packaging</a></li>
+                      <li><a href="product.html" class="sublink">Product</a></li>
+                      <li><a href="character.html" class="sublink">Character</a></li>
+                      <li><a href="web.html" class="sublink">Web</a></li>
+                      <li><a href="layout.html" class="sublink">Layout</a></li>
+                      <li><a href="contact.html" class="link">CONTACT</a></li>
+                </ul>
+                </div>
+            </div>
+
+
+        </body>
+
+<footer>
+    <div class="footer-home">
+        <p class="footercenter"> Copyright &copy; 2023 Katrina Wingching Law All Rights Reserved.</p>
+    
+</div>
+</div>
+</footer>

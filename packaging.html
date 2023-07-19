@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/menu.js">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/animsition.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+      <script>
+        $(function(){
+        $(window).scroll(function (){
+        $('.fadein').each(function(){
+        var targetElement = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > targetElement - windowHeight + 200){
+        $(this).css('opacity','1');
+        $(this).css('transform','translateY(0)');
+        }
+        });
+        });
+        });
+        </script>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $(".animsition").animsition({
+        inClass: 'fade-in',
+        outClass: 'fade-out',
+        inDuration: 1500,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'animsition-loading',
+        loadingInner: '', // e.g '<img src="loading.svg" />'
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: [ 'animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        overlay : false,
+        overlayClass : 'animsition-overlay-slide',
+        overlayParentElement : 'body',
+        transition: function(url){ window.location.href = url; }
+      });
+    });
+    </script>
+    <script>
+        $(function() {
+        var topBtn = $('#page-top');
+        topBtn.hide();
+        //スクロールが100pxに達したらボタン表示
+        $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+        topBtn.fadeIn();
+        } else {
+        topBtn.fadeOut();
+        }
+        });
+        //スクロールしてトップ
+        topBtn.click(function () {
+        $('body,html').animate({
+        scrollTop: 0
+        }, 500);
+        return false;
+        });
+        });
+        </script>
+    
+       <!--loading start-->
+       <script>
+        $(function(){
+    //読み込みが完了したら実行する
+    $(window).on('load',function(){
+      //ローディングアニメーションをフェードアウト
+      $('.loader').delay(500).fadeOut(500);
+      //背景色をフェードアウト
+      $('.loader-bg').delay(500).fadeOut(500);
+  });
+  
+    //ページの読み込みが完了してなくても5秒後にアニメーションを非表示にする
+    setTimeout(function(){
+      $('.loader-bg').fadeOut(600);
+    },1000);
+  });
+
+  setTimeout(function(){
+    $('.loader-bg').fadeOut(600);
+  },1000); //5秒後にfadeOut処理
+      </script>
+<!--loading end-->
+
+
+<script>
+    $(function(){
+    $(".p01-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+    
+<script>
+    $(function(){
+    $(".p02-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+<script>
+    $(function(){
+    $(".p03-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+<script>
+    $(function(){
+    $(".p04-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+<script>
+    $(function(){
+    $(".p05-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+
+
+<script>
+    $(function(){
+    $(".p06-bw").hover(function(){
+        $(this).stop().animate({opacity:0},"fast");
+    },function(){
+        $(this).stop().animate({opacity:1},"fast");
+    });
+    });
+</script>
+    
+    <title> LAW's portfolio | PACKAGING </title>
+
+
+    <div class="loader-bg">
+        <div class="loader"></div>
+      </div>
+
+    <div class="wrapper">
+
+    <body class="animsition">
+
+    <body bgcolor="#000"></body>
+
+    <div class="logo">  
+            <a href="index.html"><img src="images/logo/logo_wh.png" width="200px" alt="Katrina Law's Portfolio Site"></a>
+    </div>
+
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li><a href="profile.html" class="link">PROFILE</a></li>
+                        <li class="works-title">WORKS</li>
+                        <li><a href="advertisement.html" class="sublink">Advertisement</a></li>
+                        <li><a href="packaging.html" class="sublink">Packaging</a></li>
+                        <li><a href="product.html" class="sublink">Product</a></li>
+                        <li><a href="character.html" class="sublink">Character</a></li>
+                        <li><a href="web.html" class="sublink">Web</a></li>
+                        <li><a href="layout.html" class="sublink">Layout</a></li>
+                        <li><a href="contact.html" class="link">CONTACT</a></li>
+                </ul>
+                </div>
+            </div>
+
+
+    <div class="titlework">
+    <div class="work-cattit">
+        <h1 class="worksbox">WORKS</h1>
+        <h1 class="workname">Packaging</h1>
+    </div>
+    </div>
+
+    <div class="img-container">
+
+        <div class="p01">
+            <a data-fancybox="p01" href="images/details/p01-02.jpg" alt="details">
+            <a data-fancybox="p01" href="images/details/p01-01.jpg" alt="details">
+            <img class="p01-c" src="images/thumbnails/color/p01_bottletag.jpg">
+            <img class="p01-bw" src="images/thumbnails/mono/p01_bottletag_mono.jpg"></a>
+            <p class="caption1">HONG KONG - BOTTLE LABEL DESIGN</p>
+        </div>
+
+        <div class="p02">
+            <a data-fancybox="p02" href="images/details/p02-04.jpg" alt="details">
+            <a data-fancybox="p02" href="images/details/p02-03.jpg" alt="details">
+            <a data-fancybox="p02" href="images/details/p02-02.jpg" alt="details">
+            <a data-fancybox="p02" href="images/details/p02-01.jpg" alt="details">
+            <img class="p02-c" src="images/thumbnails/color/p02_soluna.jpg">
+            <img class="p02-bw" src="images/thumbnails/mono/p02_soluna_mono.jpg"></a>
+            <p class="caption1">ASSIGNMENT - EARRINGS PACKAGE</p>
+        </div>
+
+        <div class="p03">
+            <a data-fancybox="p03" href="images/details/p03-03.jpg" alt="details">
+            <a data-fancybox="p03" href="images/details/p03-02.jpg" alt="details">
+            <a data-fancybox="p03" href="images/details/p03-01.jpg" alt="details">
+            <img class="p03-c" src="images/thumbnails/color/p03_sock.jpg">
+            <img class="p03-bw" src="images/thumbnails/mono/p03_sock_mono.jpg"></a>
+            <p class="caption1">ASSIGNMENT - SOCKS PACKAGE</p>
+        </div>
+
+        <div class="p06">
+            <a data-fancybox="p06" href="images/details/p06-06.jpg" alt="details">
+            <a data-fancybox="p06" href="images/details/p06-05.jpg" alt="details">
+            <a data-fancybox="p06" href="images/details/p06-04.jpg" alt="details">
+            <a data-fancybox="p06" href="images/details/p06-03.jpg" alt="details">
+            <a data-fancybox="p06" href="images/details/p06-02.jpg" alt="details">
+            <a data-fancybox="p06" href="images/details/p06-01.jpg" alt="details">
+            <img class="p06-c" src="images/thumbnails/color/p06_kamipack.jpg">
+            <img class="p06-bw" src="images/thumbnails/mono/p06_kamipack_mono.jpg"></a>
+            <p class="caption1">ASSIGNMENT - DRINK CARTON</p>
+        </div>
+
+
+        <div class="p04">
+            <a data-fancybox="p04" href="images/details/p04-03.jpg" alt="details">
+            <a data-fancybox="p04" href="images/details/p04-02.jpg" alt="details">
+            <a data-fancybox="p04" href="images/details/p04-01.jpg" alt="details">
+            <img class="p04-c" src="images/thumbnails/color/p04_film.jpg">
+            <img class="p04-bw" src="images/thumbnails/mono/p04_film_mono.jpg"></a>
+            <p class="caption1">ASSIGNMENT - FILM PACKAGE</p>
+        </div>
+
+        <div class="p05">
+            <a data-fancybox="p05" href="images/details/p05-02.jpg" alt="details">
+            <a data-fancybox="p05" href="images/details/p05-01.jpg" alt="details">
+            <img class="p05-c" src="images/thumbnails/color/p05_giftbox.jpg">
+            <img class="p05-bw" src="images/thumbnails/mono/p05_giftbox_mono.jpg"></a>
+            <p class="caption2">HONG KONG - GIFTBOX</p>
+        </div>
+
+    </div>  
+        <footer>
+            <span><div class="footer_white"></span>
+                <p> Copyright &copy; 2023 Katrina Wingching Law All Rights Reserved.</p>
+        </footer>
+        </div>
+
+

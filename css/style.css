@@ -1,0 +1,3715 @@
+@charset "UTF-8";
+
+
+/* PC */
+
+@media screen and (min-width:1024px){
+
+
+.works a:hover{
+    cursor: url('../images/click.png'), pointer ;
+}
+
+.img-container a:hover{
+    cursor: url('../images/click.png'), pointer ;
+}
+
+.img-container-photo a:hover{
+    cursor: url('../images/click.png'), pointer ;
+}
+
+
+video{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1
+}
+
+
+body{
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.home-logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* .bg-slider {
+    display: flex;
+	width: 100%;
+	height: 100vh;
+    background-position: center center;
+	background-size: cover;
+} */
+
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: #000000;
+    transition: all 1s;
+    opacity: 0.7;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #000000;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+  
+li{
+    list-style: none; 
+    
+}
+
+
+#menu-btn-check:checked ~ .menu-content {
+    left: 75%;
+}
+
+
+#menu-btn-check {
+    display: none;
+}
+
+.link{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 50px;
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.3s;
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+    padding: 3px 5px;
+}
+
+
+.works-title{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 50px;
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+    padding: 3px 5px;
+}
+
+.link:hover{
+    color: #707070;
+    font-size: 30px;
+}
+
+.sublink{
+    font-size: 13px;
+    line-height: 25px;
+    color: #FFF;
+    transition: 0.3s;
+    text-decoration: none;
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+    padding: 3px 5px;
+}
+
+
+.sublink:hover{
+    font-size: 18px;
+    color: #707070;
+}
+
+
+.profile{
+    display: flex;
+    width: 65%;
+    margin: 100px auto auto auto;
+    flex-wrap: wrap;
+}
+
+
+
+.profile-title-text{
+    font-family: serif;
+    display: block;
+    margin-left: -13px;
+    margin-right: -1px;
+    font-weight: 600;
+    color: #707070;
+    font-size: 60px;
+    writing-mode: vertical-lr;
+}
+
+.software-img{
+    width: 100%;
+    padding-top: 8px;
+}
+
+
+.profile-pic{
+    width: 35%;
+}
+
+.profile-pic--img{
+    width: 250px;
+}
+
+.profile-text{
+    width: 400px;
+    margin-left: -5px;
+}
+
+
+
+.kata{
+    font-family:'Hiragino Kaku Gothic Pro', 'Meiryo';
+    font-size: 10px;
+    margin-top: 0;
+    margin-bottom: -30px;
+    color: #707070;
+}
+
+.name{
+    font-family:'Hiragino Kaku Gothic Pro', 'Meiryo';
+    font-size: 25px; 
+    font-weight: bolder;
+    color: #707070;
+}
+
+.mainprofile{
+    font-family:'Hiragino Kaku Gothic Pro', 'Meiryo';
+    font-size: 12px; 
+    margin-top: 45px;
+    margin-bottom: 40px;
+    line-height: 30px;
+    color: #707070;
+    width: 100%;
+}
+
+.software{
+    width: 100%;
+}
+
+.works{
+    display: flex;
+    margin: 150px auto;
+    width: 70%;
+}
+
+.cat{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.cat-ad{
+    width: 170px;
+    margin: 0 8px;
+    position: relative;
+}
+
+.cat-ad-c{
+    width: 100%;
+}
+
+.cat-ad-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.cat-p{
+    width: 170px;
+    margin: 0 8px;
+    position: relative;
+}
+
+.cat-p-c{
+    width: 100%;
+}
+
+.cat-p-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cat-pd{
+    width: 170px;
+    margin: 0 8px;
+    position: relative;
+}
+
+.cat-pd-c{
+    width: 100%;
+}
+
+.cat-pd-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cat-c{
+    width: 170px;
+    margin: 0 8px;
+    position: relative;
+}
+
+.cat-c-c{
+    width: 100%;
+}
+
+.cat-c-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cat-w{
+    width: 170px;
+    margin: 0 8px;
+    position: relative;
+}
+
+.cat-w-c{
+    width: 100%;
+}
+
+.cat-w-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cat-l{
+    width: 170px;
+    margin: 0 8px;
+    position: relative;
+}
+
+.cat-l-c{
+    width: 100%;
+}
+
+.cat-l-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+.subtitle_ad{
+    position: absolute;
+    color: #FFF;
+    padding: 10px;
+    top: 50%;
+    left: 17%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 13px;
+    background-color: #000;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    font-family: 'Hiragino Kaku Gothic Pro';
+}
+
+.subtitle_photo{
+    position: absolute;
+    color: #FFF;
+    padding: 10px;
+    top: 50%;
+    left: 36.3%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 13px;
+    background-color: #000;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    font-family: 'Hiragino Kaku Gothic Pro';
+}
+
+
+.subtitle_pkg{
+    position: absolute;
+    color: #FFF;
+    padding: 10px;
+    top: 50%;
+    left: 55.7%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 13px;
+    background-color: #000;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    font-family: 'Hiragino Kaku Gothic Pro';
+}
+
+.subtitle_others{
+    position: absolute;
+    color: #FFF;
+    padding: 10px;
+    top: 50%;
+    left: 76%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 13px;
+    background-color: #000;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    font-family: 'Hiragino Kaku Gothic Pro';
+}
+
+
+.work-title{
+    font-family: serif;
+    display: block;
+    margin-left: -13px;
+    margin-right: -1px;
+    font-weight: 600;
+    color: #707070;
+    font-size: 60px;
+    writing-mode: vertical-lr;
+}
+
+.work-cattit{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+.worksbox{
+    display: flex;
+    color: #FFF;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #707070;
+    font-family:'Hiragino Kaku Gothic Pro', 'Meiryo' ;
+    font-size: 15px;
+    align-items: center;
+}
+
+.workname{
+    color: #FFF;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 0;
+    padding-bottom: 50px;
+    width: 60%;
+    align-items: center;
+}
+
+
+.img-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
+}
+
+
+.img-container-photo{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.caption1{
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+    color: #FFF;
+    font-size: 11px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+
+
+}
+
+.caption2{
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+    color: #FFF;
+    font-size: 11px;
+    margin-top: 3px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+
+}
+
+/*advertisement*/
+
+.ad01{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.ad01-c{
+    width: 100%;
+}
+
+.ad01-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+.ad02{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.ad02-c{
+    width: 100%;
+}
+
+.ad02-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.ad03{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.ad03-c{
+    width: 100%;
+}
+
+.ad03-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.ad04{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.ad04-c{
+    width: 100%;
+}
+
+.ad04-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.ad05{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.ad05-c{
+    width: 100%;
+}
+
+.ad05-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.ad06{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.ad06-c{
+    width: 100%;
+}
+
+.ad06-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.ad07{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.ad07-c{
+    width: 100%;
+}
+
+.ad07-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.ad08{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.ad08-c{
+    width: 100%;
+}
+
+.ad08-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.ad09{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.ad09-c{
+    width: 100%;
+}
+
+.ad09-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.ad10{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.ad10-c{
+    width: 100%;
+}
+
+.ad10-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/*Package*/
+
+.p01{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.p01-c{
+    width: 100%;
+}
+
+.p01-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.p02{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.p02-c{
+    width: 100%;
+}
+
+.p02-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.p03{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.p03-c{
+    width: 100%;
+}
+
+.p03-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.p04{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.p04-c{
+    width: 100%;
+}
+
+.p04-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.p05{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.p05-c{
+    width: 100%;
+}
+
+.p05-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.p06{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.p06-c{
+    width: 100%;
+}
+
+.p06-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Product */
+
+.pd01{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.pd01-c{
+    width: 100%;
+}
+
+.pd01-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.pd02{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.pd02-c{
+    width: 100%;
+}
+
+.pd02-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.pd03{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.pd03-c{
+    width: 100%;
+}
+
+.pd03-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.pd04{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.pd04-c{
+    width: 100%;
+}
+
+.pd04-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.pd05{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.pd05-c{
+    width: 100%;
+}
+
+.pd05-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* Character Design */
+
+.c01{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.c01-c{
+    width: 100%;
+}
+
+.c01-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.c02{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.c02-c{
+    width: 100%;
+}
+
+.c02-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+/* Layout */
+
+
+.l01{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.l01-c{
+    width: 100%;
+}
+
+.l01-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.l02{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.l02-c{
+    width: 100%;
+}
+
+.l02-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* WEB */
+
+
+.w01{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.w01-c{
+    width: 100%;
+}
+
+.w01-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.w02{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.w02-c{
+    width: 100%;
+}
+
+.w02-bw{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.caption{
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+    color: #FFF;
+    font-size: 11px;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+
+.contact-form{
+    display: flex;
+    width: 60%;
+    margin: 100px auto ;
+}
+
+
+.contacttxt{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: 0 auto;
+}
+
+
+.contact-title{
+    font-family: serif;
+    display: block;
+    margin-left: -13px;
+    margin-right: -1px;
+    font-weight: 600;
+    color: #707070;
+    font-size: 60px;
+    writing-mode: vertical-lr;
+}
+
+.contactlo{
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #707070;
+    line-height: 25px;
+    width: 100%;
+    margin-top: 145px;
+}
+
+form{
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+    font-size: 12px;
+    color: #707070;
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    width: 80%;
+}
+
+
+
+
+.form label {
+    display: block;
+    padding: 12px 0 2px 0;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+  }
+  
+  .form input,
+  .form textarea {
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    padding: 2px;
+    background-color: #FFF;
+    border: 1px;
+    border: 1px solid #707070;
+    outline: none;
+    color: #707070;
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+  }
+
+
+  .form button {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    padding: 3px 10px;
+    border-color: transparent;
+    background-color: #707070;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+  }
+
+.footer-home{
+    color:#707070;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0; 
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+    }
+
+.footer{
+    color:#707070;
+    background-color: #000;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0; 
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+    }
+
+.footer_black{
+    color:#707070;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0; 
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+    }    
+
+.footer_white{
+    color: #707070;
+    background-color: #000;
+    font-size: 12px;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    bottom: 0; 
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+    }   
+
+.footer_whitebg{
+    color: #707070;
+    background-color: #FFF;
+    font-size: 12px;
+    width: 100%;
+    position: fixed;
+    bottom: 0; 
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+    text-align: center;
+        }   
+
+
+        
+        .loader-bg {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          /* ローディングアニメーション */
+          .loader {
+            font-size: 10px;
+            margin: 50px auto;
+            text-indent: -9999em;
+            width: 11em;
+            height: 11em;
+            border-radius: 50%;
+            background: #ffffff;
+            background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+            background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+            background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+            background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+            background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+            position: relative;
+            -webkit-animation: load3 1.4s infinite linear;
+            animation: load3 1.4s infinite linear;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+          }
+          .loader:before {
+            width: 50%;
+            height: 50%;
+            background: #ffffff;
+            border-radius: 100% 0 0 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+          }
+          .loader:after {
+            background: #000;
+            width: 75%;
+            height: 75%;
+            border-radius: 50%;
+            content: '';
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+          }
+          @-webkit-keyframes load3 {
+            0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+            }
+            100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+            }
+          }
+          @keyframes load3 {
+            0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+            }
+            100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+            }
+          }
+
+        }
+
+
+
+    /* Tablet */
+
+
+    @media screen and (min-width:481px) and (max-width:1023px){
+
+    .works a:hover{
+        cursor: url('../images/click.png'), pointer ;
+    }
+    
+    .img-container a:hover{
+        cursor: url('../images/click.png'), pointer ;
+    }
+    
+    .img-container-photo a:hover{
+        cursor: url('../images/click.png'), pointer ;
+    }
+    
+    
+    video{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        z-index: -1
+    }
+    
+    
+    body{
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .logo{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .home-logo{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    
+    
+    .menu-content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        z-index: 80;
+        background-color: #000000;
+        transition: all 1s;
+        opacity: 0.7;
+    }
+    
+    .menu-btn {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+        z-index: 90;
+        background-color: #000000;
+    }
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        position: absolute;
+    }
+    .menu-btn span:before {
+        bottom: 8px;
+    }
+    .menu-btn span:after {
+        top: 8px;
+    }
+    
+    
+    
+    #menu-btn-check:checked ~ .menu-btn span {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+      
+    li{
+        list-style: none; 
+        
+    }
+    
+    
+    #menu-btn-check:checked ~ .menu-content {
+        left: 60%;
+    }
+    
+    
+    #menu-btn-check {
+        display: none;
+    }
+    
+    .link{
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 50px;
+        text-decoration: none;
+        color: #FFF;
+        transition: 0.3s;
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+        padding: 3px 5px;
+
+    }
+    
+    
+    .works-title{
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 50px;
+        text-decoration: none;
+        color: #FFF;
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+        padding: 3px 5px;
+    }
+    
+    .link:hover{
+        color: #707070;
+        font-size: 30px;
+    }
+    
+    .sublink{
+        font-size: 13px;
+        line-height: 25px;
+        color: #FFF;
+        transition: 0.3s;
+        text-decoration: none;
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+        padding: 3px 5px;
+
+    }
+    
+    
+    .sublink:hover{
+        font-size: 18px;
+        color: #707070;
+    }
+    
+    
+    .profile{
+        display: flex;
+        width: 60%;
+        margin: 80px auto 100px auto;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    .profile-title-text{
+        font-family: serif;
+        display: block;
+        margin-left: -13px;
+        margin-right: -1px;
+        font-weight: 600;
+        color: #707070;
+        font-size: 60px;
+        writing-mode: vertical-lr;
+    }
+    
+    .software-img{
+        width: 100%;
+    }
+    
+    
+    .profile-pic{
+        width: 35%;
+    }
+    
+    .profile-pic--img{
+        width: 350px;
+        padding-left: 10px;
+    }
+    
+    .profile-text{
+        width: 450px;
+        margin-left: -5px;
+    }
+    
+    
+    
+    .kata{
+        font-family:'Hiragino Kaku Gothic Pro', 'Meiryo';
+        font-size: 10px;
+        margin-top: 30px;
+        margin-bottom: -30px;
+        color: #707070;
+    }
+    
+    .name{
+        font-family:'Hiragino Kaku Gothic Pro', 'Meiryo';
+        font-size: 25px; 
+        font-weight: bolder;
+        color: #707070;
+    }
+    
+    .mainprofile{
+        font-family:'Hiragino Kaku Gothic Pro', 'Meiryo';
+        font-size: 12px; 
+        margin-top: 20px;
+        margin-bottom: 40px;
+        line-height: 30px;
+        color: #707070;
+        width: 100%;
+    }
+    
+    .software{
+        width: 100%;
+    }
+    
+    .works{
+        display: flex;
+        margin: 150px auto;
+        width: 70%;
+    }
+    
+    .cat{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    
+    
+    .cat-ad{
+        width: 170px;
+        margin: 0 8px;
+        position: relative;
+    }
+    
+    .cat-ad-c{
+        width: 100%;
+    }
+    
+    .cat-ad-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .cat-p{
+        width: 170px;
+        margin: 0 8px;
+        position: relative;
+    }
+    
+    .cat-p-c{
+        width: 100%;
+    }
+    
+    .cat-p-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .cat-pd{
+        width: 170px;
+        margin: 0 8px;
+        position: relative;
+    }
+    
+    .cat-pd-c{
+        width: 100%;
+    }
+    
+    .cat-pd-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .cat-c{
+        width: 170px;
+        margin: 0 8px;
+        position: relative;
+    }
+    
+    .cat-c-c{
+        width: 100%;
+    }
+    
+    .cat-c-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .cat-w{
+        width: 170px;
+        margin: 0 8px;
+        position: relative;
+    }
+    
+    .cat-w-c{
+        width: 100%;
+    }
+    
+    .cat-w-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .cat-l{
+        width: 170px;
+        margin: 0 8px;
+        position: relative;
+    }
+    
+    .cat-l-c{
+        width: 100%;
+    }
+    
+    .cat-l-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    
+    
+    .subtitle_ad{
+        position: absolute;
+        color: #FFF;
+        padding: 10px;
+        top: 50%;
+        left: 17%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 13px;
+        background-color: #000;
+        letter-spacing: 3px;
+        font-weight: bolder;
+        font-family: 'Hiragino Kaku Gothic Pro';
+    }
+    
+    .subtitle_photo{
+        position: absolute;
+        color: #FFF;
+        padding: 10px;
+        top: 50%;
+        left: 36.3%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 13px;
+        background-color: #000;
+        letter-spacing: 3px;
+        font-weight: bolder;
+        font-family: 'Hiragino Kaku Gothic Pro';
+    }
+    
+    
+    .subtitle_pkg{
+        position: absolute;
+        color: #FFF;
+        padding: 10px;
+        top: 50%;
+        left: 55.7%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 13px;
+        background-color: #000;
+        letter-spacing: 3px;
+        font-weight: bolder;
+        font-family: 'Hiragino Kaku Gothic Pro';
+    }
+    
+    .subtitle_others{
+        position: absolute;
+        color: #FFF;
+        padding: 10px;
+        top: 50%;
+        left: 76%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 13px;
+        background-color: #000;
+        letter-spacing: 3px;
+        font-weight: bolder;
+        font-family: 'Hiragino Kaku Gothic Pro';
+    }
+    
+    
+    .work-title{
+        font-family: serif;
+        display: block;
+        margin-left: -13px;
+        margin-right: -1px;
+        font-weight: 600;
+        color: #707070;
+        font-size: 60px;
+        writing-mode: vertical-lr;
+    }
+    
+    .work-cattit{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: 15%;
+        margin-top: 2%;
+    }
+    
+    .worksbox{
+        display: flex;
+        color: #FFF;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #707070;
+        font-family:'Hiragino Kaku Gothic Pro', 'Meiryo' ;
+        font-size: 15px;
+        align-items: center;
+    }
+    
+    .workname{
+        color: #FFF;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    
+    .details{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 0;
+        padding-bottom: 50px;
+        width: 60%;
+        align-items: center;
+    }
+    
+    
+    .img-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 70%;
+        justify-content: center;
+    }
+    
+    
+    .img-container-photo{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 60%;
+    }
+    
+    .caption1{
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+        color: #FFF;
+        font-size: 11px;
+        margin-top: 3px;
+        margin-bottom: 1px;
+        letter-spacing: 1px;
+    
+    
+    }
+    
+    .caption2{
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+        color: #FFF;
+        font-size: 11px;
+        margin-top: 3px;
+        margin-bottom: 50px;
+        letter-spacing: 1px;
+    
+    }
+    
+    /*advertisement*/
+    
+    .ad01{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .ad01-c{
+        width: 100%;
+    }
+    
+    .ad01-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    
+    .ad02{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .ad02-c{
+        width: 100%;
+    }
+    
+    .ad02-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .ad03{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .ad03-c{
+        width: 100%;
+    }
+    
+    .ad03-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .ad04{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .ad04-c{
+        width: 100%;
+    }
+    
+    .ad04-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .ad05{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .ad05-c{
+        width: 100%;
+    }
+    
+    .ad05-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .ad06{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .ad06-c{
+        width: 100%;
+    }
+    
+    .ad06-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .ad07{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .ad07-c{
+        width: 100%;
+    }
+    
+    .ad07-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .ad08{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .ad08-c{
+        width: 100%;
+    }
+    
+    .ad08-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .ad09{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .ad09-c{
+        width: 100%;
+    }
+    
+    .ad09-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .ad10{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .ad10-c{
+        width: 100%;
+    }
+    
+    .ad10-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    /*Package*/
+    
+    .p01{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .p01-c{
+        width: 100%;
+    }
+    
+    .p01-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .p02{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .p02-c{
+        width: 100%;
+    }
+    
+    .p02-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .p03{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .p03-c{
+        width: 100%;
+    }
+    
+    .p03-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .p04{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .p04-c{
+        width: 100%;
+    }
+    
+    .p04-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .p05{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .p05-c{
+        width: 100%;
+    }
+    
+    .p05-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .p06{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .p06-c{
+        width: 100%;
+    }
+    
+    .p06-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    /* Product */
+    
+    .pd01{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .pd01-c{
+        width: 100%;
+    }
+    
+    .pd01-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .pd02{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .pd02-c{
+        width: 100%;
+    }
+    
+    .pd02-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .pd03{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .pd03-c{
+        width: 100%;
+    }
+    
+    .pd03-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .pd04{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .pd04-c{
+        width: 100%;
+    }
+    
+    .pd04-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .pd05{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .pd05-c{
+        width: 100%;
+    }
+    
+    .pd05-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    /* Character Design */
+    
+    .c01{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .c01-c{
+        width: 100%;
+    }
+    
+    .c01-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .c02{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .c02-c{
+        width: 100%;
+    }
+    
+    .c02-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    
+    /* Layout */
+    
+    
+    .l01{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .l01-c{
+        width: 100%;
+    }
+    
+    .l01-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .l02{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .l02-c{
+        width: 100%;
+    }
+    
+    .l02-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    /* WEB */
+    
+    
+    .w01{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .w01-c{
+        width: 100%;
+    }
+    
+    .w01-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .w02{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .w02-c{
+        width: 100%;
+    }
+    
+    .w02-bw{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .caption{
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+        color: #FFF;
+        font-size: 11px;
+        margin-top: 1px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+    
+    
+    .contact-form{
+        display: flex;
+        width: 60%;
+        margin: 120px auto ;
+    }
+    
+    
+    .contacttxt{
+        display: flex;
+        flex-wrap: wrap;
+        width: 30%;
+        margin: 0 auto;
+    }
+    
+    
+    .contact-title{
+        font-family: serif;
+        display: block;
+        margin-left: -13px;
+        margin-right: -1px;
+        font-weight: 600;
+        color: #707070;
+        font-size: 60px;
+        writing-mode: vertical-lr;
+    }
+    
+    .contactlo{
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+        font-size: 8px;
+        letter-spacing: 1px;
+        color: #707070;
+        line-height: 15px;
+        width: 100%;
+        writing-mode: vertical-rl;
+        text-align: right;
+        margin-left: -40px;
+    }
+    
+    form{
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+        font-size: 12px;
+        color: #707070;
+        padding-bottom: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 50px;
+        width: 80%;
+    }
+    
+    
+    
+    
+    .form label {
+        display: block;
+        padding: 12px 0 2px 0;
+        letter-spacing: 0.5px;
+        font-size: 14px;
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+      }
+      
+      .form input,
+      .form textarea {
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        padding: 2px;
+        background-color: #FFF;
+        border: 1px;
+        border: 1px solid #707070;
+        outline: none;
+        color: #707070;
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+      }
+    
+    
+      .form button {
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+        padding: 3px 10px;
+        border-color: transparent;
+        background-color: #707070;
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+      }
+    
+    .footer-home{
+        color:#707070;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        bottom: 0; 
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+        }
+    
+    .footer{
+        color:#707070;
+        background-color: #000;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        bottom: 0; 
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+        }
+    
+    .footer_black{
+        color:#707070;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        bottom: 0; 
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+        }    
+    
+    .footer_white{
+        color: #707070;
+        background-color: #000;
+        font-size: 12px;
+        width: 100%;
+        position: fixed;
+        text-align: center;
+        bottom: 0; 
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+        }   
+    
+    .footer_whitebg{
+        color: #707070;
+        background-color: #FFF;
+        font-size: 12px;
+        width: 100%;
+        position: fixed;
+        bottom: 0; 
+        font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+        text-align: center;
+            }   
+    
+    
+            
+            .loader-bg {
+                width: 100vw;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 9999;
+                background-color: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              
+              /* ローディングアニメーション */
+              .loader {
+                font-size: 10px;
+                margin: 50px auto;
+                text-indent: -9999em;
+                width: 11em;
+                height: 11em;
+                border-radius: 50%;
+                background: #ffffff;
+                background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                position: relative;
+                -webkit-animation: load3 1.4s infinite linear;
+                animation: load3 1.4s infinite linear;
+                -webkit-transform: translateZ(0);
+                -ms-transform: translateZ(0);
+                transform: translateZ(0);
+              }
+              .loader:before {
+                width: 50%;
+                height: 50%;
+                background: #ffffff;
+                border-radius: 100% 0 0 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+              }
+              .loader:after {
+                background: #000;
+                width: 75%;
+                height: 75%;
+                border-radius: 50%;
+                content: '';
+                margin: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+              }
+              @-webkit-keyframes load3 {
+                0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+                }
+                100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+                }
+              }
+              @keyframes load3 {
+                0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+                }
+                100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+                }
+              }
+    
+            }
+    
+
+            /* Mobile */
+
+
+            @media screen and (max-width:480px){
+
+                .works a:hover{
+                    cursor: url('../images/click.png'), pointer ;
+                }
+                
+                .img-container a:hover{
+                    cursor: url('../images/click.png'), pointer ;
+                }
+                
+                .img-container-photo a:hover{
+                    cursor: url('../images/click.png'), pointer ;
+                }
+                
+                
+                video{
+                    width: 100vw;
+                    height: 100vh;
+                    position: fixed;
+                    object-fit: cover;
+                    top: 0;
+                    left: 0;
+                    z-index: -1
+                }
+                
+                
+                body{
+                    margin: 0 auto;
+                    position: relative;
+                }
+                
+                .logo{
+                    margin-top: 10px;
+                    margin-left: 10px;
+                }
+                
+                .home-logo{
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                }
+            
+                
+                
+                .menu-content {
+                    width: 100%;
+                    height: 100%;
+                    position: fixed;
+                    top: 0;
+                    left: 100%;
+                    z-index: 80;
+                    background-color: #000000;
+                    transition: all 1s;
+                    opacity: 0.7;
+                }
+                
+                .menu-btn {
+                    position: fixed;
+                    top: 10px;
+                    right: 10px;
+                    display: flex;
+                    height: 50px;
+                    width: 50px;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 90;
+                    background-color: #000000;
+                }
+                .menu-btn span,
+                .menu-btn span:before,
+                .menu-btn span:after {
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    width: 25px;
+                    border-radius: 3px;
+                    background-color: #ffffff;
+                    position: absolute;
+                }
+                .menu-btn span:before {
+                    bottom: 8px;
+                }
+                .menu-btn span:after {
+                    top: 8px;
+                }
+                
+                
+                
+                #menu-btn-check:checked ~ .menu-btn span {
+                    background-color: rgba(255, 255, 255, 0);
+                }
+                #menu-btn-check:checked ~ .menu-btn span::before {
+                    bottom: 0;
+                    transform: rotate(45deg);
+                }
+                #menu-btn-check:checked ~ .menu-btn span::after {
+                    top: 0;
+                    transform: rotate(-45deg);
+                }
+                
+                  
+                li{
+                    list-style: none; 
+                    
+                }
+                
+                
+                #menu-btn-check:checked ~ .menu-content {
+                    left: 0%;
+                }
+                
+                
+                #menu-btn-check {
+                    display: none;
+                }
+                
+                .link{
+                    font-size: 25px;
+                    font-weight: 600;
+                    line-height: 50px;
+                    text-decoration: none;
+                    color: #FFF;
+                    transition: 0.3s;
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+                    padding: 3px 5px;
+                }
+                
+                
+                .works-title{
+                    font-size: 25px;
+                    font-weight: 600;
+                    line-height: 50px;
+                    text-decoration: none;
+                    color: #FFF;
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+                    padding: 3px 5px;
+                }
+                
+                .link:hover{
+                    color: #707070;
+                    font-size: 30px;
+                }
+                
+                .sublink{
+                    font-size: 13px;
+                    line-height: 25px;
+                    color: #FFF;
+                    transition: 0.3s;
+                    text-decoration: none;
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+                    padding: 3px 5px;
+                }
+                
+                
+                .sublink:hover{
+                    font-size: 18px;
+                    color: #707070;
+                }
+                
+                
+                .profile{
+                    display: flex;
+                    width: 80%;
+                    margin: 80px auto 100px 30px;
+                    flex-wrap: wrap;
+                }
+                
+                
+                
+                .profile-title-text{
+                    font-family: serif;
+                    display: block;
+                    margin-left: -20px;
+                    margin-right: -1px;
+                    font-weight: 600;
+                    color: #707070;
+                    font-size: 50px;
+                    writing-mode: vertical-lr;
+                }
+                
+                .software-img{
+                    width: 100%;
+                }
+                
+                
+                .profile-pic{
+                    width: 35%;
+                }
+                
+                .profile-pic--img{
+                    width: 200px;
+                    padding-left: 0px;
+                }
+                
+                .profile-text{
+                    width: 250px;
+                    margin-left: -5px;
+                }
+                
+                
+                
+                .kata{
+                    font-family:'Hiragino Kaku Gothic Pro', 'Meiryo';
+                    font-size: 10px;
+                    margin-top: 30px;
+                    margin-bottom: -30px;
+                    color: #707070;
+                }
+                
+                .name{
+                    font-family:'Hiragino Kaku Gothic Pro', 'Meiryo';
+                    font-size: 25px; 
+                    font-weight: bolder;
+                    color: #707070;
+                }
+                
+                .mainprofile{
+                    font-family:'Hiragino Kaku Gothic Pro', 'Meiryo';
+                    font-size: 12px; 
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    line-height: 30px;
+                    color: #707070;
+                    width: 100%;
+                }
+                
+                .software{
+                    width: 100%;
+                }
+                
+                .works{
+                    display: flex;
+                    margin: 150px auto;
+                    width: 70%;
+                }
+                
+                .cat{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                }
+                
+                
+                .cat-ad{
+                    width: 170px;
+                    margin: 0 8px;
+                    position: relative;
+                }
+                
+                .cat-ad-c{
+                    width: 100%;
+                }
+                
+                .cat-ad-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .cat-p{
+                    width: 170px;
+                    margin: 0 8px;
+                    position: relative;
+                }
+                
+                .cat-p-c{
+                    width: 100%;
+                }
+                
+                .cat-p-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                .cat-pd{
+                    width: 170px;
+                    margin: 0 8px;
+                    position: relative;
+                }
+                
+                .cat-pd-c{
+                    width: 100%;
+                }
+                
+                .cat-pd-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                .cat-c{
+                    width: 170px;
+                    margin: 0 8px;
+                    position: relative;
+                }
+                
+                .cat-c-c{
+                    width: 100%;
+                }
+                
+                .cat-c-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                .cat-w{
+                    width: 170px;
+                    margin: 0 8px;
+                    position: relative;
+                }
+                
+                .cat-w-c{
+                    width: 100%;
+                }
+                
+                .cat-w-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                .cat-l{
+                    width: 170px;
+                    margin: 0 8px;
+                    position: relative;
+                }
+                
+                .cat-l-c{
+                    width: 100%;
+                }
+                
+                .cat-l-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                
+                
+                .subtitle_ad{
+                    position: absolute;
+                    color: #FFF;
+                    padding: 10px;
+                    top: 50%;
+                    left: 17%;
+                    padding-top: 2px;
+                    padding-bottom: 2px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    font-size: 13px;
+                    background-color: #000;
+                    letter-spacing: 3px;
+                    font-weight: bolder;
+                    font-family: 'Hiragino Kaku Gothic Pro';
+                }
+                
+                .subtitle_photo{
+                    position: absolute;
+                    color: #FFF;
+                    padding: 10px;
+                    top: 50%;
+                    left: 36.3%;
+                    padding-top: 2px;
+                    padding-bottom: 2px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    font-size: 13px;
+                    background-color: #000;
+                    letter-spacing: 3px;
+                    font-weight: bolder;
+                    font-family: 'Hiragino Kaku Gothic Pro';
+                }
+                
+                
+                .subtitle_pkg{
+                    position: absolute;
+                    color: #FFF;
+                    padding: 10px;
+                    top: 50%;
+                    left: 55.7%;
+                    padding-top: 2px;
+                    padding-bottom: 2px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    font-size: 13px;
+                    background-color: #000;
+                    letter-spacing: 3px;
+                    font-weight: bolder;
+                    font-family: 'Hiragino Kaku Gothic Pro';
+                }
+                
+                .subtitle_others{
+                    position: absolute;
+                    color: #FFF;
+                    padding: 10px;
+                    top: 50%;
+                    left: 76%;
+                    padding-top: 2px;
+                    padding-bottom: 2px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    font-size: 13px;
+                    background-color: #000;
+                    letter-spacing: 3px;
+                    font-weight: bolder;
+                    font-family: 'Hiragino Kaku Gothic Pro';
+                }
+                
+                
+                .work-title{
+                    font-family: serif;
+                    display: block;
+                    margin-left: -13px;
+                    margin-right: -1px;
+                    font-weight: 600;
+                    color: #707070;
+                    font-size: 60px;
+                    writing-mode: vertical-lr;
+                }
+                
+                .work-cattit{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    margin-left: 15%;
+                    margin-top: 2%;
+                }
+                
+                .worksbox{
+                    display: flex;
+                    color: #FFF;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    background-color: #707070;
+                    font-family:'Hiragino Kaku Gothic Pro', 'Meiryo' ;
+                    font-size: 15px;
+                    align-items: center;
+                }
+                
+                .workname{
+                    color: #FFF;
+                    font-size: 20px;
+                    padding-left: 20px;
+                }
+                
+                .details{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                    margin-top: 0;
+                    padding-bottom: 50px;
+                    width: 60%;
+                    align-items: center;
+                }
+                
+                
+                .img-container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                    width: 70%;
+                    justify-content: center;
+                }
+                
+                
+                .img-container-photo{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                    width: 60%;
+                }
+                
+                .caption1{
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+                    color: #FFF;
+                    font-size: 11px;
+                    margin-top: 3px;
+                    margin-bottom: 1px;
+                    letter-spacing: 1px;
+                
+                
+                }
+                
+                .caption2{
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+                    color: #FFF;
+                    font-size: 11px;
+                    margin-top: 3px;
+                    margin-bottom: 50px;
+                    letter-spacing: 1px;
+                
+                }
+                
+                /*advertisement*/
+                
+                .ad01{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .ad01-c{
+                    width: 100%;
+                }
+                
+                .ad01-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                
+                .ad02{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .ad02-c{
+                    width: 100%;
+                }
+                
+                .ad02-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .ad03{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .ad03-c{
+                    width: 100%;
+                }
+                
+                .ad03-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                .ad04{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .ad04-c{
+                    width: 100%;
+                }
+                
+                .ad04-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .ad05{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .ad05-c{
+                    width: 100%;
+                }
+                
+                .ad05-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .ad06{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .ad06-c{
+                    width: 100%;
+                }
+                
+                .ad06-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                .ad07{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .ad07-c{
+                    width: 100%;
+                }
+                
+                .ad07-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .ad08{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .ad08-c{
+                    width: 100%;
+                }
+                
+                .ad08-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .ad09{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .ad09-c{
+                    width: 100%;
+                }
+                
+                .ad09-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .ad10{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .ad10-c{
+                    width: 100%;
+                }
+                
+                .ad10-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                /*Package*/
+                
+                .p01{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .p01-c{
+                    width: 100%;
+                }
+                
+                .p01-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                .p02{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .p02-c{
+                    width: 100%;
+                }
+                
+                .p02-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .p03{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .p03-c{
+                    width: 100%;
+                }
+                
+                .p03-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .p04{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .p04-c{
+                    width: 100%;
+                }
+                
+                .p04-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                .p05{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .p05-c{
+                    width: 100%;
+                }
+                
+                .p05-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .p06{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .p06-c{
+                    width: 100%;
+                }
+                
+                .p06-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                /* Product */
+                
+                .pd01{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .pd01-c{
+                    width: 100%;
+                }
+                
+                .pd01-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                .pd02{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .pd02-c{
+                    width: 100%;
+                }
+                
+                .pd02-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .pd03{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .pd03-c{
+                    width: 100%;
+                }
+                
+                .pd03-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .pd04{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .pd04-c{
+                    width: 100%;
+                }
+                
+                .pd04-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .pd05{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .pd05-c{
+                    width: 100%;
+                }
+                
+                .pd05-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                /* Character Design */
+                
+                .c01{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .c01-c{
+                    width: 100%;
+                }
+                
+                .c01-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .c02{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .c02-c{
+                    width: 100%;
+                }
+                
+                .c02-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                
+                /* Layout */
+                
+                
+                .l01{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .l01-c{
+                    width: 100%;
+                }
+                
+                .l01-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .l02{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .l02-c{
+                    width: 100%;
+                }
+                
+                .l02-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                /* WEB */
+                
+                
+                .w01{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .w01-c{
+                    width: 100%;
+                }
+                
+                .w01-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .w02{
+                    width: 100%;
+                    margin: 10px 0;
+                    position: relative;
+                }
+                
+                .w02-c{
+                    width: 100%;
+                }
+                
+                .w02-bw{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                
+                .caption{
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+                    color: #FFF;
+                    font-size: 11px;
+                    margin-top: 1px;
+                    margin-bottom: 10px;
+                    letter-spacing: 1px;
+                }
+                
+                
+                .contact-form{
+                    display: flex;
+                    width: 60%;
+                    margin: 45px auto 50px 35px ;
+                }
+                
+                
+                .contacttxt{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 20%;
+                    margin: 0 auto;
+                }
+                
+                
+                .contact-title{
+                    font-family: serif;
+                    display: block;
+                    margin-left: -13px;
+                    margin-right: -1px;
+                    font-weight: 600;
+                    color: #707070;
+                    font-size: 50px;
+                    writing-mode: vertical-lr;
+                }
+                
+                .contactlo{
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+                    font-size: 8px;
+                    letter-spacing: 1px;
+                    color: #707070;
+                    line-height: 15px;
+                    width: 20%;
+                    padding-left: 18px;
+                    writing-mode: vertical-rl;
+                    text-align: right;
+                }
+                
+                form{
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+                    font-size: 12px;
+                    color: #707070;
+                    padding-bottom: 5px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-left: 50px;
+                    width: 80%;
+                }
+                
+                
+                
+                
+                .form label {
+                    display: block;
+                    padding: 12px 0 2px 0;
+                    letter-spacing: 0.5px;
+                    font-size: 14px;
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+                  }
+                  
+                  .form input,
+                  .form textarea {
+                    font-size: 14px;
+                    display: block;
+                    width: 100%;
+                    padding: 2px;
+                    background-color: #FFF;
+                    border: 1px;
+                    border: 1px solid #707070;
+                    outline: none;
+                    color: #707070;
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+                  }
+                
+                
+                  .form button {
+                    display: block;
+                    margin-top: 20px;
+                    width: 100%;
+                    padding: 3px 10px;
+                    border-color: transparent;
+                    background-color: #707070;
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 14px;
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+                  }
+                
+                .footer-home{
+                    color:#707070;
+                    font-size: 8px;
+                    text-align: center;
+                    width: 100%;
+                    position: fixed;
+                    bottom: 0; 
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+                    }
+                
+                .footer{
+                    color:#707070;
+                    background-color: #000;
+                    font-size: 8px;
+                    text-align: center;
+                    width: 100%;
+                    position: fixed;
+                    bottom: 0; 
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+                    }
+                
+                .footer_black{
+                    color:#707070;
+                    font-size: 8px;
+                    text-align: center;
+                    width: 100%;
+                    position: fixed;
+                    bottom: 0; 
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+                    }    
+                
+                .footer_white{
+                    color: #707070;
+                    background-color: #000;
+                    font-size: 8px;
+                    width: 100%;
+                    position: fixed;
+                    text-align: center;
+                    bottom: 0; 
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+                    }   
+                
+                .footer_whitebg{
+                    color: #707070;
+                    background-color: #FFF;
+                    font-size: 8px;
+                    width: 100%;
+                    position: fixed;
+                    bottom: 0; 
+                    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo';
+                    text-align: center;
+                        }   
+                
+                
+                        
+                        .loader-bg {
+                            width: 100vw;
+                            height: 100vh;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            z-index: 9999;
+                            background-color: #000;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                          }
+                          
+                          /* ローディングアニメーション */
+                          .loader {
+                            font-size: 10px;
+                            margin: 50px auto;
+                            text-indent: -9999em;
+                            width: 11em;
+                            height: 11em;
+                            border-radius: 50%;
+                            background: #ffffff;
+                            background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                            background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                            background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                            background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                            background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                            position: relative;
+                            -webkit-animation: load3 1.4s infinite linear;
+                            animation: load3 1.4s infinite linear;
+                            -webkit-transform: translateZ(0);
+                            -ms-transform: translateZ(0);
+                            transform: translateZ(0);
+                          }
+                          .loader:before {
+                            width: 50%;
+                            height: 50%;
+                            background: #ffffff;
+                            border-radius: 100% 0 0 0;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            content: '';
+                          }
+                          .loader:after {
+                            background: #000;
+                            width: 75%;
+                            height: 75%;
+                            border-radius: 50%;
+                            content: '';
+                            margin: auto;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                          }
+                          @-webkit-keyframes load3 {
+                            0% {
+                            -webkit-transform: rotate(0deg);
+                            transform: rotate(0deg);
+                            }
+                            100% {
+                            -webkit-transform: rotate(360deg);
+                            transform: rotate(360deg);
+                            }
+                          }
+                          @keyframes load3 {
+                            0% {
+                            -webkit-transform: rotate(0deg);
+                            transform: rotate(0deg);
+                            }
+                            100% {
+                            -webkit-transform: rotate(360deg);
+                            transform: rotate(360deg);
+                            }
+                          }
+                
+                        }
+                
